@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/MNSIT/MNISt_Mlops/mlruns/0/feebf41e817a493187125d93c81fd82e/artifacts
+end_time: 1716200072124
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: feebf41e817a493187125d93c81fd82e
+run_name: entertaining-asp-772
+run_uuid: feebf41e817a493187125d93c81fd82e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716200045224
+status: 3
+tags: []
+user_id: GuptaJi
