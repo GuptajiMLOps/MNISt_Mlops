@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from src.predict import load_model, predict
+from predict import load_model, prediction
 
 class Item(BaseModel):
     data: list
@@ -11,5 +11,5 @@ model = load_model()
 
 @app.post("/predict/")
 def get_prediction(item: Item):
-    prediction = predict(model, item.data)
-    return {"prediction": prediction}
+    predictions = prediction(model, item.data)
+    return {"prediction": predictions}

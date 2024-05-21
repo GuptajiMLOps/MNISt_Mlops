@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mnist-mlops
+  labels:
+    app: mnist-mlops
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mnist-mlops
+  template:
+    metadata:
+      labels:
+        app: mnist-mlops
+    spec:
+      containers:
+      - name: mnist-mlops
+        image: mnist-mlops:latest # Replace with your Docker image name
+        ports:
+        - containerPort: 8000
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "500m"
+          limits:
+            memory: "512Mi"
+            cpu: "1000m"
